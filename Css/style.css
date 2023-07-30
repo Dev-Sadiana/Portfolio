@@ -12,7 +12,7 @@ body {
     width: 100%;
 }
 
-.cabecalho__menu__imagem {
+.cabecalho__imagem {
     height: 50px;
     width: 50px;
     display: inline-block;
@@ -79,6 +79,7 @@ a {
 .conteudo {
     padding: 10px 0 0 0;
 }
+
 .sobre__titulo {
     font-size: 70px;
     font-weight: 900;
@@ -127,6 +128,11 @@ a {
     padding-bottom: 15px;
     width: 200px;
 }
+
+
+
+
+
 
 
 /*PORTIFOLIO | CURIOSIDADES*/
@@ -204,8 +210,17 @@ a {
     padding: 10px 50px;
 }
 
-/* Carrossel de imagens */
 
+
+
+
+
+
+
+
+
+/* Carrossel de imagens */
+/*
 .sobre__container {
     display: block;
     width: 100%;
@@ -238,7 +253,7 @@ a {
 
 .left-hover-text-khaki {
     padding-right: 410px;
-}
+} */
 
 .rodape {
     box-sizing: border-box;
@@ -248,4 +263,79 @@ a {
     text-align: center;
     font-family: 'Ruda', sans-serif;
     font-size: 20px;
+}
+
+/* PROPRIEDADES RESPONSIVAS */
+
+@media only screen and (max-width: 768px) {
+  /* For mobile phones: */
+
+  * {
+    margin: 0;
+    padding: 0;
+  }
+
+    .cabecalho {
+    padding: 25px 35px;
+    width: 100%;
+    }
+
+    .cabecalho-principal {
+    display: flex;
+    }
+
+    .cabecalho__imagem {
+    height: 25px;
+    width: 25px;
+    }
+
+    .principal {
+        padding-left: 15px;
+        padding-top: 10px;
+    }
+
+    .principal__sobre {
+    display: block;
+    padding: 20px 0;
+}
+
+    .sobre__titulo {
+    font-size: 25px;
+    padding: 0 65px 25px 37.5px;
+    }
+
+    .sobre__conteudo p {
+    font-size: 10px;
+    line-height: 1rem;
+    margin: 0 0 25px 20px;
+    width: 200px;
+    }
+
+    .redes__sociais strong {
+        font-size: 15px;
+        padding-top: 10px;
+    }
+
+    .redes__sociais__links {
+        width: 100%;
+        border-radius: 30px;
+        padding: 7.5px;
+    }
+
+    .redes__sociais__links a {
+        display: inline-block;
+    }
+
+    .redes__sociais__links img {
+        text-align: center;
+        display: flex;
+        width: 20px;
+        height: 20px;
+        padding: 5px 25px;
+    }
+
+    .rodape {
+    padding: 25px 35px;
+    font-size: 10px;
+    }
 }
