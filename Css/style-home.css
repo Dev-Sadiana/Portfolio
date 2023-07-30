@@ -14,7 +14,7 @@ body {
     width: 100%;
 }
 
-.cabecalho__menu__imagem {
+.cabecalho__imagem {
     height: 50px;
     width: 50px;
     display: inline-block;
@@ -28,7 +28,7 @@ body {
     vertical-align: top;
 }
 
-.cabecalho__menu__link, .cabecalho__menu__link1 {
+.cabecalho__link, .cabecalho__link1 {
     display: inline-block;
     position: relative;
     padding-left: 100px;
@@ -40,7 +40,7 @@ body {
     text-transform: uppercase;
 }
 
-.cabecalho__menu__link::after {
+.cabecalho__link::after {
     content: '';
     position: absolute;
     width: 60%;
@@ -53,13 +53,13 @@ body {
     transition: transform 0.25s ease-out;
 }
 
-.cabecalho__menu__link:hover:after { 
+.cabecalho__link:hover:after { 
     transform: scaleX(1);
     transform-origin: bottom center;
 }
 
 
-        .cabecalho__menu__link1::after {
+        .cabecalho__link1::after {
             content: '';
             position: absolute;
             width: 66%;
@@ -72,7 +72,7 @@ body {
             transition: transform 0.25s ease-out;
         }
 
-        .cabecalho__menu__link1:hover:after { 
+        .cabecalho__link1:hover:after { 
             transform: scaleX(1);
             transform-origin: bottom center;
         }
@@ -84,12 +84,12 @@ body {
     padding-top: 90px;
 }
 
-.principal__apresentacao, .principal__foto {
+.principal__apresentacao, .apresentacao-foto {
     display: inline-block;
     vertical-align: top;
 }
 
-.apresentacao__titulo {
+.apresentacao-titulo {
     font-size: 50px;
     font-weight: 900;
     color: #ffffff;
@@ -107,7 +107,7 @@ body {
     width: 400px;
 }
 
-.foto__home {
+.foto-home {
     width: 300px;
     height: 300px;
     border: 0 solid #ffffff;
@@ -165,6 +165,14 @@ body {
 }
 
 
+
+
+
+
+
+
+
+
 /* PROPRIEDADES RESPONSIVAS */
 
 @media only screen and (max-width: 768px) {
@@ -179,16 +187,16 @@ body {
     display: flex;
     }
 
-    .cabecalho__menu__imagem {
+    .cabecalho__imagem {
     height: 25px;
     width: 25px;
     }
 
-    .cabecalho__menu__link, .cabecalho__menu__link1 {
+    .cabecalho__link, .cabecalho__link1 {
     display: inline-block;
     position: relative;
     left: 0px;
-    font-size: 12.5px;
+    font-size: 12px;
     }
 
     .cabecalho a {
@@ -199,7 +207,7 @@ body {
 
     .principal {
         padding-left: 15px;
-        padding-top: 45px;
+        padding-top: 10px;
     }
 
     .titulo-principal {
@@ -208,7 +216,7 @@ body {
     }
 
 
-    .apresentacao__titulo {
+    .apresentacao-titulo {
     font-size: 25px;
     display: inline-block;
     padding: 0 65px 25px 37.5px;
@@ -244,7 +252,7 @@ body {
         padding: 5px 25px;
     }
 
-    .foto__home {
+    .foto-home {
     width: 150px;
     height: 150px;
     margin: 10px 25px 10px 50%;
