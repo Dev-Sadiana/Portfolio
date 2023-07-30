@@ -12,14 +12,15 @@
     
     <header class="cabecalho">
         <nav>
-            <img class="cabecalho__menu__imagem" src="./Imagens/imagem-cabecalho.png">
-            <a href="./index.html"> <h1 class="titulo-principal">DEV <br> GRACE</h1> </a>
-            <a class="cabecalho__menu__link" href="index.html">Home</a>
+        <div class="cabecalho-principal">
+            <a href="./index.html"> <img class="cabecalho__imagem" src="./Imagens/imagem-cabecalho.png"> </a>
+        </div>
         </nav>
     </header>
 
     <main class="principal">
 
+<!--Tópicos de presentação-->
         <section class="principal__sobre">
             
             <div class="sobre">
@@ -27,51 +28,7 @@
 
             </div>
 
-            <div class="sobre__container">
-
-                <div class="content-display-container">
-                  <img class="mySlides" src="./Imagens/foto_sobre.jpg">
-                  <img class="mySlides" src="./Imagens/foto_sobre_1.jpg">
-                  <img class="mySlides" src="./Imagens/foto_sobre_2.jpg">
-
-                  <div class="center-container-section-large-text-white-display-bottommiddle">
-                    <div class="left-hover-text-khaki" onclick="plusDivs(-1)">&#10094;</div>
-                    <div class="right-hover-text-khaki" onclick="plusDivs(1)">&#10095;</div>
-                    <span class="badge-demo-border-transparent-hover-white" onclick="currentDiv(1)"></span>
-                    <span class="badge-demo-border-transparent-hover-white" onclick="currentDiv(2)"></span>
-                    <span class="badge-demo-border-transparent-hover-white" onclick="currentDiv(3)"></span>
-                  </div>
-                </div>
-
-                <script>
-                var slideIndex = 1;
-                showDivs(slideIndex);
-
-                function plusDivs(n) {
-                  showDivs(slideIndex += n);
-                }
-
-                function currentDiv(n) {
-                  showDivs(slideIndex = n);
-                }
-
-                function showDivs(n) {
-                  var i;
-                  var x = document.getElementsByClassName("mySlides");
-                  var dots = document.getElementsByClassName("demo");
-                  if (n > x.length) {slideIndex = 1}
-                  if (n < 1) {slideIndex = x.length}
-                  for (i = 0; i < x.length; i++) {
-                    x[i].style.display = "none";  
-                  }
-                  for (i = 0; i < dots.length; i++) {
-                    dots[i].className = dots[i].className.replace("white", "");
-                  }
-                  x[slideIndex-1].style.display = "block";  
-                  dots[slideIndex-1].className += "white";
-                }
-                </script>
-
+<!--Texto tópicos-->
         <div class="conteudo">
             <div class="sobre__conteudo">
                 <p> <strong>Moro em</strong> Porto Alegre/RS - Brasil </p>
@@ -84,16 +41,22 @@
 
         </section>
 
+<!--Redes sociais-->
         <section class="redes__sociais">
 
+        <!--Título/convite-->
                 <strong> Acompanhe minhas redes sociais </strong>
 
-                <div class=redes>
-                   <div class="redes__sociais__links">
-                    <a href="https://www.instagram.com/sadi_p4ula/"> <img src="./Imagens/instagram.png" alt="Logo do Intagram" title="Logo do Instagram" target="_blank"> </a>
+                <div class=redes> 
 
+                    <!--Instagram-->
+                   <div class="redes__sociais__links">
+                    <a href="https://www.instagram.com/sadi_p4ula/" target="_blank"> <img src="./Imagens/instagram.png" alt="Logo do Intagram" title="Logo do Instagram"> </a>
+
+                    <!--Linkedin-->
                     <a href="https://www.linkedin.com/in/sadiana-paula-manuel-da-silva-b51190212?lipi=urn%3Ali%3Apage%3Ad_flagship3_profile_view_base_contact_details%3BDfUYWgbpTISrE0j6vqW6hw%3D%3D" target="_blank"> <img src="./Imagens/linkedin.png" alt="Logo do LinkedIn" title="Logo do LinkedIn"> </a>
 
+                    <!--Github-->
                       <a href="https://github.com/Dev-Sadiana" target="_blank"> <img src="./Imagens/github.png" alt="Logo do Github" title="Logo do Logo do Github"> </a>
                   </div>
               </section>
