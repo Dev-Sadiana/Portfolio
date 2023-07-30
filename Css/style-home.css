@@ -1,0 +1,257 @@
+/*Fontes da página*/
+@import url('https://fonts.googleapis.com/css2?family= Ruda :wght@900 & display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Oswald:wght@300&display=swap');
+
+body {
+    background-color: #0A043C;
+    box-sizing: border-box;
+}
+
+.cabecalho {
+    box-sizing: border-box;
+    color: #ffffff;
+    padding: 50px 77px;
+    width: 100%;
+}
+
+.cabecalho__menu__imagem {
+    height: 50px;
+    width: 50px;
+    display: inline-block;
+}
+
+.titulo-principal {
+    font-family: 'Ruda', sans-serif;
+    font-weight: 900;
+    font-size: 30px;
+    display: inline-block;
+    vertical-align: top;
+}
+
+.cabecalho__menu__link, .cabecalho__menu__link1 {
+    display: inline-block;
+    position: relative;
+    padding-left: 100px;
+    font-size: 25px;
+    text-decoration: none;
+    color: #ffffff;
+    font-family: 'Ruda', sans-serif;
+    font-weight: bold;
+    text-transform: uppercase;
+}
+
+.cabecalho__menu__link::after {
+    content: '';
+    position: absolute;
+    width: 60%;
+    transform: scaleX(0);
+    height: 2px;
+    bottom: 0;
+    left: 99px;
+    background-color: #9340FF;
+    transform-origin: bottom right;
+    transition: transform 0.25s ease-out;
+}
+
+.cabecalho__menu__link:hover:after { 
+    transform: scaleX(1);
+    transform-origin: bottom center;
+}
+
+
+        .cabecalho__menu__link1::after {
+            content: '';
+            position: absolute;
+            width: 66%;
+            transform: scaleX(0);
+            height: 2px;
+            bottom: 0;
+            left: 100px;
+            background-color: #9340FF;
+            transform-origin: bottom right;
+            transition: transform 0.25s ease-out;
+        }
+
+        .cabecalho__menu__link1:hover:after { 
+            transform: scaleX(1);
+            transform-origin: bottom center;
+        }
+
+
+.principal {
+    box-sizing: border-box;
+    padding-left: 150px;
+    padding-top: 90px;
+}
+
+.principal__apresentacao, .principal__foto {
+    display: inline-block;
+    vertical-align: top;
+}
+
+.apresentacao__titulo {
+    font-size: 50px;
+    font-weight: 900;
+    color: #ffffff;
+    font-family: 'Ruda', sans-serif;
+    display: inline-block;
+    padding: 0 130px 50px 75px;
+}
+
+.principal__apresentacao p {
+    font-family: 'Oswald', sans-serif;
+    color: #ffffff;
+    font-size: 20px;
+    line-height: 2rem;
+    margin: 0 0 80px 80px;
+    width: 400px;
+}
+
+.foto__home {
+    width: 300px;
+    height: 300px;
+    border: 0 solid #ffffff;
+    border-radius: 50px;
+    opacity: 0.5;
+    margin: 80px 50px 0 70px;
+}
+
+
+.redes {
+    text-align: center;
+}
+
+.redes__sociais {
+    width: 100%;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.redes__sociais strong {
+    display: block;
+    font-weight: bold;
+    color: #9340FF;
+    font-size: 30px;
+    text-align: center;
+}
+
+.redes__sociais__links {
+    display: inline-block;
+    width: 450px;
+    border-radius: 30px;
+    padding: 15px;
+}
+
+.redes__sociais__links a {
+    display: inline-block;
+}
+
+.redes__sociais__links img {
+    text-align: center;
+    display: flex;
+    width: 40px;
+    height: 40px;
+    padding: 10px 50px;
+}
+
+.rodape {
+    box-sizing: border-box;
+    color: #ffffff;
+    padding: 50px 77px;
+    width: 100%;
+    text-align: center;
+    font-family: 'Ruda', sans-serif;
+    font-size: 20px;
+}
+
+
+/* PROPRIEDADES RESPONSIVAS */
+
+@media only screen and (max-width: 768px) {
+  /* For mobile phones: */
+
+    .cabecalho {
+    padding: 25px 35px;
+    width: 100%;
+    }
+
+    .cabecalho-principal {
+    display: flex;
+    }
+
+    .cabecalho__menu__imagem {
+    height: 25px;
+    width: 25px;
+    }
+
+    .cabecalho__menu__link, .cabecalho__menu__link1 {
+    display: inline-block;
+    position: relative;
+    left: 0px;
+    font-size: 12.5px;
+    }
+
+    .cabecalho a {
+    display: inline-block;
+    padding: 10px 15px;
+    }
+
+
+    .principal {
+        padding-left: 15px;
+        padding-top: 45px;
+    }
+
+    .titulo-principal {
+    font-size: 15px;
+    display: flex;
+    }
+
+
+    .apresentacao__titulo {
+    font-size: 25px;
+    display: inline-block;
+    padding: 0 65px 25px 37.5px;
+    }
+
+    .principal__apresentacao p {
+    font-size: 10px;
+    line-height: 1rem;
+    margin: 0 0 0 40px;
+    width: 200px;
+    }
+
+    .redes__sociais strong {
+        font-size: 15px;
+        padding-top: 10px;
+    }
+
+    .redes__sociais__links {
+        width: 100%;
+        border-radius: 30px;
+        padding: 7.5px;
+    }
+
+    .redes__sociais__links a {
+        display: inline-block;
+    }
+
+    .redes__sociais__links img {
+        text-align: center;
+        display: flex;
+        width: 20px;
+        height: 20px;
+        padding: 5px 25px;
+    }
+
+    .foto__home {
+    width: 150px;
+    height: 150px;
+    margin: 10px 25px 10px 50%;
+    }
+
+    .rodape {
+        padding: 25px 35px;
+        font-size: 10px;
+    }
+}

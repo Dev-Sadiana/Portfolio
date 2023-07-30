@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfólio | Sobre</title>
+    <link rel="stylesheet" href="./Css/reset.css">
+    <link rel="stylesheet" href="./Css/style.css">
+</head> 
+<body>
+    
+    <header class="cabecalho">
+        <nav>
+            <img class="cabecalho__menu__imagem" src="./Imagens/imagem-cabecalho.png">
+            <a href="./index.html"> <h1 class="titulo-principal">DEV <br> GRACE</h1> </a>
+            <a class="cabecalho__menu__link" href="index.html">Home</a>
+        </nav>
+    </header>
+
+    <main class="principal">
+
+        <section class="principal__sobre">
+            
+            <div class="sobre">
+                <h2 class="sobre__titulo">Sobre <br> Mim</h2>
+
+            </div>
+
+            <div class="sobre__container">
+
+                <div class="content-display-container">
+                  <img class="mySlides" src="./Imagens/foto_sobre.jpg">
+                  <img class="mySlides" src="./Imagens/foto_sobre_1.jpg">
+                  <img class="mySlides" src="./Imagens/foto_sobre_2.jpg">
+
+                  <div class="center-container-section-large-text-white-display-bottommiddle">
+                    <div class="left-hover-text-khaki" onclick="plusDivs(-1)">&#10094;</div>
+                    <div class="right-hover-text-khaki" onclick="plusDivs(1)">&#10095;</div>
+                    <span class="badge-demo-border-transparent-hover-white" onclick="currentDiv(1)"></span>
+                    <span class="badge-demo-border-transparent-hover-white" onclick="currentDiv(2)"></span>
+                    <span class="badge-demo-border-transparent-hover-white" onclick="currentDiv(3)"></span>
+                  </div>
+                </div>
+
+                <script>
+                var slideIndex = 1;
+                showDivs(slideIndex);
+
+                function plusDivs(n) {
+                  showDivs(slideIndex += n);
+                }
+
+                function currentDiv(n) {
+                  showDivs(slideIndex = n);
+                }
+
+                function showDivs(n) {
+                  var i;
+                  var x = document.getElementsByClassName("mySlides");
+                  var dots = document.getElementsByClassName("demo");
+                  if (n > x.length) {slideIndex = 1}
+                  if (n < 1) {slideIndex = x.length}
+                  for (i = 0; i < x.length; i++) {
+                    x[i].style.display = "none";  
+                  }
+                  for (i = 0; i < dots.length; i++) {
+                    dots[i].className = dots[i].className.replace("white", "");
+                  }
+                  x[slideIndex-1].style.display = "block";  
+                  dots[slideIndex-1].className += "white";
+                }
+                </script>
+
+        <div class="conteudo">
+            <div class="sobre__conteudo">
+                <p> <strong>Moro em</strong> Porto Alegre/RS - Brasil </p>
+        
+                <p> <strong>Formação</strong> Ensino médio concluído, atualmente trabalhando como Jovem Aprendiz em serviços administrativos. <br>  Conhecimento básico em Pacote Office e inglês, além de capacitação em liderança pelo programa Lauching Leaders.</p>
+        
+                <p> <strong>Aspirações</strong> Concluir o curso de Programação Web e obter o certificado em serviços Administrativos, para que possa atuar na área de Gestão de Projetos. </p>
+            </div>
+        </div>
+
+        </section>
+
+        <section class="redes__sociais">
+
+                <strong> Acompanhe minhas redes sociais </strong>
+
+                <div class=redes>
+                   <div class="redes__sociais__links">
+                    <a href="https://www.instagram.com/sadi_p4ula/"> <img src="./Imagens/instagram.png" alt="Logo do Intagram" title="Logo do Instagram" target="_blank"> </a>
+
+                    <a href="https://www.linkedin.com/in/sadiana-paula-manuel-da-silva-b51190212?lipi=urn%3Ali%3Apage%3Ad_flagship3_profile_view_base_contact_details%3BDfUYWgbpTISrE0j6vqW6hw%3D%3D" target="_blank"> <img src="./Imagens/linkedin.png" alt="Logo do LinkedIn" title="Logo do LinkedIn"> </a>
+
+                      <a href="https://github.com/Dev-Sadiana" target="_blank"> <img src="./Imagens/github.png" alt="Logo do Github" title="Logo do Logo do Github"> </a>
+                  </div>
+              </section>
+
+    </main>
+
+    <footer class="rodape">
+        <p>© Desenvolvido por Dev Grace.</p>
+    </footer>
+</body>
+</html> 
