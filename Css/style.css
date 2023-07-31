@@ -62,14 +62,9 @@ a {
     transform-origin: bottom center;
 }
 
-.principal {
-    box-sizing: border-box;
-    display: block;
-}
-
 .principal__sobre {
     display: flex;
-    padding: 50px 280px;
+    justify-content: center;
 }
 
 
@@ -138,8 +133,15 @@ a {
 /*PORTIFOLIO | CURIOSIDADES*/
 
 
+.principal {
+    box-sizing: border-box;
+    display: block;
+}
+
 .curiosidades {
     display: flex;
+    justify-content: center;
+    padding: 30px;
 }
 
 .curiosidades__titulo {
@@ -211,14 +213,6 @@ a {
 }
 
 
-
-
-
-
-
-
-
-
 /* Carrossel de imagens */
 /*
 .sobre__container {
@@ -258,7 +252,7 @@ a {
 .rodape {
     box-sizing: border-box;
     color: #ffffff;
-    padding: 20px 77px 50px 77px;
+    padding: 50px 77px;
     width: 100%;
     text-align: center;
     font-family: 'Ruda', sans-serif;
@@ -307,7 +301,7 @@ a {
     .sobre__conteudo p {
     font-size: 10px;
     line-height: 1rem;
-    margin: 0 0 25px 20px;
+    margin: 0 0 25px 10px;
     width: 200px;
     }
 
@@ -333,6 +327,32 @@ a {
         height: 20px;
         padding: 5px 25px;
     }
+
+
+
+    .curiosidades {
+        display: block;
+        justify-content: center;
+        padding: 15px;
+    }
+
+
+    .curiosidades__titulo {
+        font-size: 25px;
+        padding: 0 0 10px 10px;
+    }
+
+
+    .curiosidades__conteudo p {
+        font-size: 10px;
+        line-height: 1rem;
+        margin: 0 0 25px 10px;
+        width: 200px;
+        height: 155px;
+        padding: 7.5px;
+    }
+
+
 
     .rodape {
     padding: 25px 35px;
