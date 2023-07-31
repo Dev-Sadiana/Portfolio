@@ -79,9 +79,9 @@ body {
 
 
 .principal {
-    box-sizing: border-box;
-    padding-left: 150px;
-    padding-top: 90px;
+    padding: 30px;
+    display: flex;
+    justify-content: center;
 }
 
 .principal__apresentacao, .apresentacao-foto {
