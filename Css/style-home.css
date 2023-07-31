@@ -2,14 +2,26 @@
 @import url('https://fonts.googleapis.com/css2?family= Ruda :wght@900 & display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Oswald:wght@300&display=swap');
 
+
+
+:root {
+    --cor-primaria:  #0A043C;
+    --cor-secundaria:  #ffffff;
+    --cor-terciaria: #9340FF;
+  
+    --fonte-primaria: 'Ruda', sans-serif;
+    --fonte-secundaria: 'Oswald', sans-serif;
+  }
+  
+
 body {
-    background-color: #0A043C;
+    background-color: var(--cor-primaria);
     box-sizing: border-box;
 }
 
 .cabecalho {
     box-sizing: border-box;
-    color: #ffffff;
+    color: var(--cor-secundaria);
     padding: 50px 77px;
     width: 100%;
 }
@@ -21,7 +33,7 @@ body {
 }
 
 .titulo-principal {
-    font-family: 'Ruda', sans-serif;
+    font-family: var(--fonte-primaria);
     font-weight: 900;
     font-size: 30px;
     display: inline-block;
@@ -34,8 +46,8 @@ body {
     padding-left: 100px;
     font-size: 25px;
     text-decoration: none;
-    color: #ffffff;
-    font-family: 'Ruda', sans-serif;
+    color: var(--cor-secundaria);
+    font-family: var(--fonte-primaria);
     font-weight: bold;
     text-transform: uppercase;
 }
@@ -48,7 +60,7 @@ body {
     height: 2px;
     bottom: 0;
     left: 99px;
-    background-color: #9340FF;
+    background-color: var(--cor-terciaria);
     transform-origin: bottom right;
     transition: transform 0.25s ease-out;
 }
@@ -67,7 +79,7 @@ body {
             height: 2px;
             bottom: 0;
             left: 100px;
-            background-color: #9340FF;
+            background-color: var(--cor-terciaria);
             transform-origin: bottom right;
             transition: transform 0.25s ease-out;
         }
@@ -92,15 +104,15 @@ body {
 .apresentacao-titulo {
     font-size: 50px;
     font-weight: 900;
-    color: #ffffff;
-    font-family: 'Ruda', sans-serif;
+    color: var(--cor-secundaria);
+    font-family: var(--fonte-primaria);
     display: inline-block;
     padding: 0 130px 50px 75px;
 }
 
 .principal__apresentacao p {
-    font-family: 'Oswald', sans-serif;
-    color: #ffffff;
+    font-family: var(--fonte-secundaria);
+    color: var(--cor-secundaria);
     font-size: 20px;
     line-height: 2rem;
     margin: 0 0 80px 80px;
@@ -130,7 +142,7 @@ body {
 .redes__sociais strong {
     display: block;
     font-weight: bold;
-    color: #9340FF;
+    color: var(--cor-terciaria);
     font-size: 30px;
     text-align: center;
 }
@@ -156,11 +168,11 @@ body {
 
 .rodape {
     box-sizing: border-box;
-    color: #ffffff;
+    color: var(--cor-secundaria);
     padding: 50px 77px;
     width: 100%;
     text-align: center;
-    font-family: 'Ruda', sans-serif;
+    font-family: var(--fonte-primaria);
     font-size: 20px;
 }
 
